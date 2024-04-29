@@ -98,17 +98,17 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 1rem;
 }
 
 .card {
   background-color: var(--white);
-  /* max-width: 130rem; */
   max-width: 20rem;
-  width: 90%;
+  border-radius: 1rem;
   padding-inline: 1rem;
   padding-block-start: 1rem;
   padding-block-end: 2rem;
-  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
 }
 
 .card__img {
@@ -121,6 +121,7 @@ main {
 
 .card__content {
   text-align: center;
+  padding-inline: 1rem;
 }
 
 .card__title {
