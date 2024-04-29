@@ -53,6 +53,9 @@ body {
   line-height: 1.5;
   font-family:  var(--ff-outfit);
   background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -89,4 +92,44 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  /* max-width: 130rem; */
+  max-width: 20rem;
+  width: 90%;
+  padding-inline: 1rem;
+  padding-block-start: 1rem;
+  padding-block-end: 2rem;
+  border-radius: 1rem;
+}
+
+.card__img {
+  margin-block-end: 1rem;
+}
+
+.card__img img {
+  border-radius: .5rem;
+}
+
+.card__content {
+  text-align: center;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  margin-block-end: 1rem;
+  color: var(--dark-blue);
+}
+
+.card__description {
+  font-size: var(--fs-body);
+  color: var(--grayish-blue)
 }
