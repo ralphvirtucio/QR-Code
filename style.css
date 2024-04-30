@@ -99,6 +99,7 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
+  width: 90%;
 }
 
 .card {
@@ -125,7 +126,7 @@ main {
 }
 
 .card__title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-block-end: 1rem;
   color: var(--dark-blue);
 }
@@ -133,4 +134,15 @@ main {
 .card__description {
   font-size: var(--fs-body);
   color: var(--grayish-blue)
+}
+
+
+@media only screen and (min-width: 23rem) {
+  .main {
+    width: 100%;
+  }
+
+  .card__title {
+    font-size: 1.25rem;
+  }
 }
